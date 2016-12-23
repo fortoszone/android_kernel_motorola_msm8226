@@ -74,7 +74,7 @@ echo -e "$White***********************************************"
 echo "             Compiling FortoKernel             "
 echo -e "***********************************************$nocol"
 make clean && make mrproper
-make forto_falcon_defconfig
+make falcon_defconfig
 make -j4 CONFIG_NO_ERROR_ON_MISMATCH=y
 if ! [ -a $ZIMAGE ];
 then
